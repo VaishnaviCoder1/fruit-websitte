@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Products – OrganoBite Foods</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Nunito', sans-serif; }
+    .text-brand { color: #3a7d44 !important; }
+    .bg-brand   { background-color: #3a7d44 !important; }
+    .btn-brand  { background-color: #3a7d44; color: #fff; border: none; }
+    .btn-brand:hover { background-color: #2e6636; color: #fff; }
+    .btn-outline-brand { border: 2px solid #3a7d44; color: #3a7d44; }
+    .btn-outline-brand:hover { background: #3a7d44; color: #fff; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,.1) !important; transition: .25s; }
+    .product-img { height: 220px; object-fit: cover; }
+    .sub-thumb  { width: 78px; height: 78px; object-fit: cover; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="https://organobitefoods.com/images/final logo.png" height="44" alt="Logo" onerror="this.style.display='none'">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="fruit.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="a.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold text-brand active" href="p.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="c.html">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-brand btn-sm px-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>
+        <button class="btn btn-brand btn-sm px-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="py-5 text-white text-center" style="background:#3a7d44;">
+  <div class="container py-2">
+    <h1 class="fw-bold display-5 mb-2">Our <span style="color:#a5d6a7;">Products</span></h1>
+    <p class="fs-5 opacity-75 mb-0">Handpicked from nature, packed with love — 100% organic & preservative-free.</p>
+    <nav aria-label="breadcrumb" class="mt-3">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active text-white">Products</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- FILTER BADGES -->
+<section class="py-3 bg-white shadow-sm">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-2 justify-content-center">
+      <span class="badge rounded-pill bg-brand px-3 py-2 fs-6">All</span>
+      <span class="badge rounded-pill text-brand px-3 py-2 fs-6" style="background:#e8f5e9;">Fruits</span>
+      <span class="badge rounded-pill text-brand px-3 py-2 fs-6" style="background:#e8f5e9;">Berries</span>
+      <span class="badge rounded-pill text-brand px-3 py-2 fs-6" style="background:#e8f5e9;">Vegetables</span>
+      <span class="badge rounded-pill text-brand px-3 py-2 fs-6" style="background:#e8f5e9;">Pulp & Puree</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="py-5" style="background:#f9fbe7;">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- MANGO -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/Mango1.webp" class="card-img-top rounded-top-4 product-img" alt="Mango" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Mango'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🥭 Mango</h5>
+            <p class="card-text text-secondary small">Available Mango Varieties: Totapuri, Badam Mango, Alphonso.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/mangoslice.jpg" class="sub-thumb mb-1" alt="Mango Slices" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Slices</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/mangocubes.png" class="sub-thumb mb-1" alt="Mango Cubes" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=C'">
+                <p class="small text-muted mb-0">Cubes</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/mangopulp.jpg" class="sub-thumb mb-1" alt="Mango Pulp" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=P'">
+                <p class="small text-muted mb-0">Pulp</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTARD APPLE -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/custard-apple.png" class="card-img-top rounded-top-4 product-img" alt="Custard Apple" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Custard+Apple'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🍈 Custard Apple</h5>
+            <p class="card-text text-secondary small">Sweet, creamy custard apples packed with nutrients. Available in pulp and puree form.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/custardpulp2.webp" class="sub-thumb mb-1" alt="Custard Puree" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=P'">
+                <p class="small text-muted mb-0">Puree</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/custardslice.jpg" class="sub-thumb mb-1" alt="Custard Pulp" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Pulp</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHIKKU -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/chikku.jpg" class="card-img-top rounded-top-4 product-img" alt="Chikku" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Chikku'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🟤 Chikku</h5>
+            <p class="card-text text-secondary small">Sweet and grainy chikku in slice and pulp forms — ideal for milkshakes or smoothies.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/chikkuslice.avif" class="sub-thumb mb-1" alt="Chikku Slice" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Slice</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/Chikko-Pulp-1.webp" class="sub-thumb mb-1" alt="Chikku Pulp" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=P'">
+                <p class="small text-muted mb-0">Pulp</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALL BERRIES -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/berries.png3.webp" class="card-img-top rounded-top-4 product-img" alt="Berries" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Berries'">
+          <div class="card-body">
+            <span class="badge rounded-pill mb-2 text-white" style="background:#c62828;">Berries</span>
+            <h5 class="card-title fw-bold">🍓 All Berries</h5>
+            <p class="card-text text-secondary small">Fresh frozen berries packed with antioxidants & nutrients.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/strawberry.png" class="sub-thumb mb-1" alt="Strawberry" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Strawberry</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/blackberries.jpg" class="sub-thumb mb-1" alt="Blackberry" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=B'">
+                <p class="small text-muted mb-0">Blackberry</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/blueberry.jpg" class="sub-thumb mb-1" alt="Blueberry" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=B'">
+                <p class="small text-muted mb-0">Blueberry</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/Raspberries.jpg" class="sub-thumb mb-1" alt="Raspberry" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=R'">
+                <p class="small text-muted mb-0">Raspberry</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/mulberry.jpg" class="sub-thumb mb-1" alt="Mulberry" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=M'">
+                <p class="small text-muted mb-0">Mulberry</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- JAMUN -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/jambolan1.jpg" class="card-img-top rounded-top-4 product-img" alt="Jamun" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Jamun'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🫐 Jamun</h5>
+            <p class="card-text text-secondary small">Seasonal jamun available in slice & pulp form.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/frozen-jamun-slice.jpg" class="sub-thumb mb-1" alt="Jamun Slice" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Slice</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/Profruitin-Frozen-Jamun-Pulp.jpg" class="sub-thumb mb-1" alt="Jamun Pulp" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=P'">
+                <p class="small text-muted mb-0">Pulp</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GUAVA -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/guava.png" class="card-img-top rounded-top-4 product-img" alt="Guava" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Guava'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🍐 Guava</h5>
+            <p class="card-text text-secondary small">White & pink guava in slices and pulp form.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/guavaplup.jpeg" class="sub-thumb mb-1" alt="Guava Pulp" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=P'">
+                <p class="small text-muted mb-0">Pulp</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/guavaslice.jpg" class="sub-thumb mb-1" alt="Guava Slices" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Slices</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PINEAPPLE -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/pineapple.webp" class="card-img-top rounded-top-4 product-img" alt="Pineapple" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Pineapple'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🍍 Pineapple</h5>
+            <p class="card-text text-secondary small">Fresh pineapple in slices and cubes — perfect for snacking or refreshing drinks.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/pineappleslice.jpg" class="sub-thumb mb-1" alt="Pineapple Slice" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Slice</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/pineapplecube.jpg" class="sub-thumb mb-1" alt="Pineapple Cube" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=C'">
+                <p class="small text-muted mb-0">Cube</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- KIWI -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/kivi.jpg" class="card-img-top rounded-top-4 product-img" alt="Kiwi" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Kiwi'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🥝 Kiwi</h5>
+            <p class="card-text text-secondary small">Fresh kiwi available whole or sliced — perfect for salads, smoothies, and healthy snacks.</p>
+            <div class="d-flex gap-2 mt-3 flex-wrap">
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/kivi.jpg" class="sub-thumb mb-1" alt="Whole Kiwi" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=W'">
+                <p class="small text-muted mb-0">Whole</p>
+              </div>
+              <div class="text-center">
+                <img src="https://organobitefoods.com/images/kiwi-fruit-two-slice1.jpg" class="sub-thumb mb-1" alt="Sliced Kiwi" onerror="this.src='https://placehold.co/78/e8f5e9/3a7d44?text=S'">
+                <p class="small text-muted mb-0">Sliced</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GREEN PEARS -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/pears.png" class="card-img-top rounded-top-4 product-img" alt="Green Pears" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Green+Pears'">
+          <div class="card-body">
+            <span class="badge bg-brand rounded-pill mb-2">Fruit</span>
+            <h5 class="card-title fw-bold">🍐 Green Pears</h5>
+            <p class="card-text text-secondary small">Frozen seasonal pears straight from our farms — crunchy, refreshing and naturally sweet.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SWEET CORN -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/sweet-corn.png2.png" class="card-img-top rounded-top-4 product-img" alt="Sweet Corn" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Sweet+Corn'">
+          <div class="card-body">
+            <span class="badge rounded-pill mb-2 text-dark" style="background:#f9a825;">Vegetable</span>
+            <h5 class="card-title fw-bold">🌽 Sweet Corn</h5>
+            <p class="card-text text-secondary small">Fresh sweet corn available in seed form — golden kernels packed with energy and flavour.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GREEN PEAS -->
+      <div class="col-md-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100">
+          <img src="https://organobitefoods.com/images/green peas.jpg" class="card-img-top rounded-top-4 product-img" alt="Green Peas" onerror="this.src='https://placehold.co/400x220/e8f5e9/3a7d44?text=Green+Peas'">
+          <div class="card-body">
+            <span class="badge rounded-pill mb-2 text-dark" style="background:#f9a825;">Vegetable</span>
+            <h5 class="card-title fw-bold">🫛 Green Peas</h5>
+            <p class="card-text text-secondary small">Nutritious frozen green peas packed with protein and fibre, harvested fresh from our farms.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+            <a href="contact.html" class="btn btn-brand btn-sm rounded-pill px-3 w-100">Enquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="py-4 bg-white">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3">
+        <div class="d-flex align-items-center justify-content-center gap-2">
+          <i class="bi bi-award-fill fs-3 text-brand"></i>
+          <div class="text-start"><p class="fw-bold mb-0 small">Certified Organic</p><p class="text-secondary mb-0" style="font-size:.75rem;">All products verified</p></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="d-flex align-items-center justify-content-center gap-2">
+          <i class="bi bi-snow fs-3 text-brand"></i>
+          <div class="text-start"><p class="fw-bold mb-0 small">IQF Frozen</p><p class="text-secondary mb-0" style="font-size:.75rem;">Freshness locked in</p></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="d-flex align-items-center justify-content-center gap-2">
+          <i class="bi bi-truck fs-3 text-brand"></i>
+          <div class="text-start"><p class="fw-bold mb-0 small">Cold Chain Delivery</p><p class="text-secondary mb-0" style="font-size:.75rem;">Safe & reliable</p></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="d-flex align-items-center justify-content-center gap-2">
+          <i class="bi bi-leaf fs-3 text-brand"></i>
+          <div class="text-start"><p class="fw-bold mb-0 small">No Preservatives</p><p class="text-secondary mb-0" style="font-size:.75rem;">100% natural always</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 text-white text-center" style="background:#3a7d44;">
+  <div class="container py-3">
+    <h2 class="fw-bold display-5 mb-3">Want to Place a <span style="color:#a5d6a7;">Bulk Order?</span></h2>
+    <p class="fs-5 mb-4 opacity-75">We supply to restaurants, hotels, juice bars, and retailers. Contact us for wholesale pricing.</p>
+    <a href="contact.html" class="btn btn-light btn-lg px-5 rounded-pill fw-semibold text-brand shadow">Contact Us <i class="bi bi-arrow-right ms-2"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="fw-bold mb-1">🌿 OrganoBite Foods</h5>
+        <p class="text-white-50 small mb-3">Harvesting. Exporting. Manufacturing.</p>
+        <p class="text-white-50 small">We deliver fresh, organic goodness. Join thousands who trust us for quality and care.</p>
+        <p class="fw-semibold mt-3 mb-1 small">Subscribe for updates</p>
+        <div class="input-group input-group-sm">
+          <input type="email" class="form-control bg-secondary border-0 text-white" placeholder="Your email">
+          <button class="btn btn-sm px-3 text-white" style="background:#3a7d44;border:none;">Subscribe</button>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2 offset-lg-1">
+        <h6 class="fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li><a href="index.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>Home</a></li>
+          <li><a href="about.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>About Us</a></li>
+          <li><a href="products.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>Products</a></li>
+          <li><a href="contact.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6 class="fw-bold mb-3">Help & Support</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>FAQs</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>Shipping & Returns</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>Track Order</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-brand me-1"></i>Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6 class="fw-bold mb-3">Contact</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 text-white-50 small">
+          <li class="d-flex gap-2"><i class="bi bi-geo-alt-fill text-brand mt-1 flex-shrink-0"></i>House No. 1408, Post - Diva, Tal - Purandar, Dist. Pune, MH - 412301</li>
+          <li class="d-flex gap-2"><i class="bi bi-telephone-fill text-brand mt-1 flex-shrink-0"></i>+91 96895 29921 | 9592462828</li>
+          <li class="d-flex gap-2"><i class="bi bi-envelope-fill text-brand mt-1 flex-shrink-0"></i>organobitefoods@gmail.com</li>
+        </ul>
+        <div class="d-flex gap-3 mt-3 fs-5">
+          <a href="#" class="text-white-50"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-secondary mt-4 mb-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="text-white-50 small mb-0">© 2025 OrganoBite Foods. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-white-50 text-decoration-none small">Privacy Policy</a>
+        <a href="#" class="text-white-50 text-decoration-none small">Terms</a>
+        <a href="#" class="text-white-50 text-decoration-none small">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SIGN IN MODAL -->
+<div class="modal fade" id="signinModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0 shadow-lg">
+      <div class="modal-header border-0"><h5 class="modal-title fw-bold">Sign In</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body px-4 pb-4">
+        <div class="mb-3"><label class="form-label fw-semibold small">Email</label><input type="email" class="form-control rounded-3" placeholder="you@example.com"></div>
+        <div class="mb-3"><label class="form-label fw-semibold small">Password</label><input type="password" class="form-control rounded-3" placeholder="••••••••"></div>
+        <button class="btn w-100 rounded-3 py-2 fw-semibold text-white" style="background:#3a7d44;">Sign In</button>
+        <p class="text-center text-secondary small mt-3 mb-0">Don't have an account? <a href="#" class="text-brand fw-semibold" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SIGN UP MODAL -->
+<div class="modal fade" id="signupModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0 shadow-lg">
+      <div class="modal-header border-0"><h5 class="modal-title fw-bold">Create Account</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body px-4 pb-4">
+        <div class="mb-3"><label class="form-label fw-semibold small">Full Name</label><input type="text" class="form-control rounded-3" placeholder="Your full name"></div>
+        <div class="mb-3"><label class="form-label fw-semibold small">Email</label><input type="email" class="form-control rounded-3" placeholder="you@example.com"></div>
+        <div class="mb-3"><label class="form-label fw-semibold small">Password</label><input type="password" class="form-control rounded-3" placeholder="Create a password"></div>
+        <button class="btn w-100 rounded-3 py-2 fw-semibold text-white" style="background:#3a7d44;">Sign Up</button>
+        <p class="text-center text-secondary small mt-3 mb-0">Already have an account? <a href="#" class="text-brand fw-semibold" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/s/bootstrap.bundle.min.js"></script>
+</body>
+</html>
